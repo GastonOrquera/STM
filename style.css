@@ -19,7 +19,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
 }
 
 header {
@@ -45,6 +44,7 @@ header .title {
     letter-spacing: 1px;
     background: -webkit-linear-gradient(#1d2b2b, #151616, #a4fffc);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     z-index: 1000;
@@ -61,24 +61,17 @@ header .title span {
 header nav {
     display: none;
     position: absolute;
-    /* top: 3.540rem;
-    right: 0; */
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    /* background-color: rgba(0, 174, 255, 0.4); */
     background-color: #1e2c2cb7;
-
     padding: 1rem 1rem;
-    /* clip-path: fill-box; */
-    /* border-radius: 8%; */
     z-index: 999;
 }
 
 header nav.active {
     display: block;
-
 }
 
 header nav ul {
@@ -87,11 +80,12 @@ header nav ul {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    height: 100%;
+
 }
 
 header nav ul li {
     list-style: none;
+
 }
 
 header nav ul li a {
@@ -104,7 +98,6 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    /* color: #a4fffc; */
     color: #1d2b2b;
 }
 
@@ -120,10 +113,6 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
-.hamburger:hover {
-    /* background-color: #242b29; */
-    background-color: #00d3cc3d;
-}
 
 .hamburger .one,
 .two,
@@ -155,14 +144,12 @@ header nav ul li a:hover {
 
 .conteinerMainOne {
     padding: 1rem 2rem;
-    /* background-color: yellow; */
     height: 66vh;
     display: flex;
     justify-content: space-between;
 }
 
 .conteinerMainOne .conteinerOne {
-    /* background-color: yellowgreen; */
     display: flex;
     flex-direction: column;
     justify-content: center;
