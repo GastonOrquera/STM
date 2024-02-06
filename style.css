@@ -68,11 +68,11 @@ header nav {
     left: 0;
     bottom: 0;
     /* background-color: rgba(0, 174, 255, 0.4); */
-    background-color: #1e2c2c86;
+    background-color: #1e2c2cb7;
     width: 100%;
     padding: 1rem 1rem;
-    clip-path: fill-box;
-    border-radius: 8%;
+    /* clip-path: fill-box; */
+    /* border-radius: 8%; */
     z-index: 999;
 }
 
@@ -98,14 +98,15 @@ header nav ul li a {
     font-size: 1.4rem;
     text-decoration: none;
     font-family: var(--font);
-    color: rgb(24, 24, 24);
+    color: rgb(228, 228, 228);
     font-weight: 900;
-    transition: 600ms;
+    transition: 400ms;
     text-transform: uppercase;
 }
 
 header nav ul li a:hover {
-    color: #a4fffc;
+    /* color: #a4fffc; */
+    color: #1d2b2b;
 }
 
 .hamburger {
@@ -138,14 +139,17 @@ header nav ul li a:hover {
 
 .active .one {
     transform: rotate(45deg) translate(3px, 2px);
+    background-color: white;
 }
 
 .active .two {
     opacity: 0;
+    background-color: white;
 }
 
 .active .three {
     transform: rotate(-45deg) translate(3px, -3px);
+    background-color: white;
 }
 
 /* END HEADER */
