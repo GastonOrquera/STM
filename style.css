@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+
+:root {
+    --font: 'Roboto', sans-serif;
+    --fontTwo: 'Protest Strike', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    /* background-image: url(img/background.jpg); */
+    background-image: url(img/backgroundPrueba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+header {
+    /* background-color: #e9e9e9; */
+    /* background-color: rgba(72, 72, 255, 0.185); */
+
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title {
+    font-size: 2rem;
+    font-family: var(--fontTwo);
+    /* color: rgb(20, 20, 20); */
+    color: #161918;
+    text-decoration: none;
+    font-weight: 900;
+    /* background-color: rgba(0, 0, 255, 0.185); */
+    padding: .6rem .2rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient(#1d2b2b, #151616, #a4fffc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    z-index: 1000;
+}
+
+header .title:hover {
+    transform: skewX(6deg);
+}
+
+header .title span {
+    color: rgba(0, 211, 204, 0.363)
+}
+
+header nav {
+    display: none;
+    position: absolute;
+    /* top: 3.540rem;
+    right: 0; */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 174, 255, 0.4); */
+    background-color: #1e2c2c86;
+    width: 100%;
+    padding: 1rem 1rem;
+    clip-path: fill-box;
+    border-radius: 8%;
+    z-index: 999;
+}
+
+header nav.active {
+    display: block;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: var(--font);
+    color: rgb(24, 24, 24);
+    font-weight: 900;
+    transition: 600ms;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #a4fffc;
+}
+
+.hamburger {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hamburger:hover {
+    /* background-color: #242b29; */
+    background-color: #00d3cc3d;
+}
+
+.hamburger .one,
+.two,
+.three {
+    width: 16px;
+    height: 2px;
+    background-color: rgb(24, 24, 24);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    border-radius: 1px;
+    z-index: 999;
+}
+
+.active .one {
+    transform: rotate(45deg) translate(3px, 2px);
+}
+
+.active .two {
+    opacity: 0;
+}
+
+.active .three {
+    transform: rotate(-45deg) translate(3px, -3px);
+}
+
+/* END HEADER */
+
+.conteinerMainOne {
+    padding: 1rem 2rem;
+    /* background-color: yellow; */
+    height: 66vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteinerMainOne .conteinerOne {
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.conteinerMainOne h1 {
+    font-family: var(--fontTwo);
+}
+
+.conteinerMainOne .conteinerOne p {
+    font-size: 1.1rem;
+    font-family: var(--font);
+    color: #1d2b2b;
+    margin-top: .6rem;
+}
+
+.conteinerMainOne .conteinerOne .btn {
+    background-color: #1d2b2b;
+    padding: .6rem 2rem;
+    font-family: var(--fontTwo);
+    text-decoration: none;
+    width: max-content;
+    margin-top: 1rem;
+    border-radius: 4px;
+    color: rgb(228, 228, 228);
+    border: 1px solid transparent;
+    transition: 600ms;
+}
+
+.conteinerMainOne .conteinerOne .btn:hover {
+    background-color: #1d2b2b2a;
+    border: 1px solid #1d2b2b;
+    color: #151616;
+}
+
+/* END CONTEINER ONE */
+
+.conteinerMainOne .conteinerTwo {
+    height: 100%;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerMainOne .conteinerTwo .imgLavaRopa {
+    background-image: url(img/lavaropas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 26rem;
+    width: 26rem;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .conteinerMainOne {
+        flex-direction: column;
+    }
+
+
+    .conteinerMainOne .conteinerTwo {
+        margin-right: 0;
+    }
+
+    .conteinerMainOne .conteinerTwo .imgLavaRopa {
+        height: 16rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
