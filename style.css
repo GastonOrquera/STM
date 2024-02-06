@@ -100,7 +100,6 @@ header nav ul li a {
     font-family: var(--font);
     color: rgb(228, 228, 228);
     font-weight: 900;
-    transition: 1s;
     text-transform: uppercase;
 }
 
@@ -191,7 +190,6 @@ header nav ul li a:hover {
     border-radius: 4px;
     color: rgb(228, 228, 228);
     border: 1px solid transparent;
-    transition: 600ms;
 }
 
 .conteinerMainOne .conteinerOne .btn:hover {
