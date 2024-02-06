@@ -69,7 +69,7 @@ header nav {
     bottom: 0;
     /* background-color: rgba(0, 174, 255, 0.4); */
     background-color: #1e2c2cb7;
-    width: 100%;
+
     padding: 1rem 1rem;
     /* clip-path: fill-box; */
     /* border-radius: 8%; */
@@ -100,7 +100,7 @@ header nav ul li a {
     font-family: var(--font);
     color: rgb(228, 228, 228);
     font-weight: 900;
-    transition: 400ms;
+    transition: 1s;
     text-transform: uppercase;
 }
 
