@@ -35,7 +35,7 @@ header .title {
     font-size: 2rem;
     font-family: var(--fontTwo);
     /* color: rgb(20, 20, 20); */
-    color: #161918;
+    /* color: #161918; */
     text-decoration: none;
     font-weight: 900;
     /* background-color: rgba(0, 0, 255, 0.185); */
@@ -48,14 +48,6 @@ header .title {
     -webkit-text-fill-color: transparent;
     color: transparent;
     z-index: 1000;
-}
-
-header .title:hover {
-    transform: skewX(6deg);
-}
-
-header .title span {
-    color: rgba(0, 211, 204, 0.363)
 }
 
 header nav {
@@ -147,6 +139,7 @@ header nav ul li a:hover {
     height: 66vh;
     display: flex;
     justify-content: space-between;
+    /* background-color: blueviolet; */
 }
 
 .conteinerMainOne .conteinerOne {
@@ -177,6 +170,7 @@ header nav ul li a:hover {
     border-radius: 4px;
     color: rgb(228, 228, 228);
     border: 1px solid transparent;
+    transition: 1s;
 }
 
 .conteinerMainOne .conteinerOne .btn:hover {
@@ -200,22 +194,63 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 26rem;
+    height: 66vh;
     width: 26rem;
 }
 
 /* SECTION SERVICIOS */
 
 .servicios {
-    background-color: #1d2b2b49;
+    background-color: #F3F3F3;
+    padding: 2rem 2rem;
+}
+
+.servicios h2 {
+    font-family: var(--fontTwo);
+}
+
+.servicios p {
+    font-size: 1.1rem;
+    font-family: var(--font);
+    color: #1d2b2b;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+}
+
+.servicios .eP {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid #0000003b; */
+}
+
+.servicios li {
+    list-style: none;
+    list-style-position: inside;
+    font-family: var(--font);
+}
+
+.servicios li::before {
+    /* content: '𖣐'; */
+    content: '◉';
+    margin-right: .4rem;
+    color: #1d2b2b;
 }
 
 
 
 @media only screen and (max-width: 1000px) {
 
+    .background {
+        height: max-content;
+    }
+
+    header {
+        padding: 1rem 1rem;
+    }
+
     .conteinerMainOne {
         flex-direction: column;
+        padding: 2rem 1rem;
     }
 
     .conteinerMainOne .conteinerTwo {
@@ -223,8 +258,12 @@ header nav ul li a:hover {
     }
 
     .conteinerMainOne .conteinerTwo .imgLavaRopa {
-        height: 20rem;
+        height: 16rem;
         width: 100%;
         margin-top: 1rem;
+    }
+
+    .servicios {
+        padding: 2rem 1rem;
     }
 }
