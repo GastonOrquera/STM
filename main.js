@@ -23,7 +23,7 @@ hamburger.addEventListener('click', function () {
 
 ScrollReveal().reveal('.scroll-revealTitles', {
     origin: 'top',
-    distance: '40px',
+    distance: '10px',
     duration: 1000,
     easing: 'cubic-bezier(0.5,0,0,1)',
     interval: 200
@@ -33,7 +33,7 @@ ScrollReveal().reveal('.scroll-revealTitles', {
 
 ScrollReveal().reveal('.scroll-revealP', {
     origin: 'left',
-    distance: '30px',
+    distance: '10px',
     duration: 600,
     esasing: 'cubic-bezier(0.5,0,0,1)',
     interval: 400
@@ -43,7 +43,7 @@ ScrollReveal().reveal('.scroll-revealP', {
 
 ScrollReveal().reveal('.scroll-revealImgs', {
     origin: 'right',
-    distance: '20px',
+    distance: '10px',
     duration: 2000,
     easing: 'cubic-bezier(0.5,0,0,1)',
     interval: 600
@@ -53,7 +53,7 @@ ScrollReveal().reveal('.scroll-revealImgs', {
 
 ScrollReveal().reveal('.scroll-revealLi', {
     origin: 'left',
-    distance: '20px',
+    distance: '10px',
     duration: 3000,
     easing: 'cubic-bezier(0.5,0,0,1)',
     interval: 600
