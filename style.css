@@ -247,6 +247,8 @@ header nav ul li a:hover {
     margin-top: 2rem;
     overflow: hidden;
     gap: 4px;
+    background-color: #d1ff9548;
+    padding: .4rem;
 }
 
 .servicios .grid .img1 {
@@ -309,7 +311,7 @@ header nav ul li a:hover {
 
     .servicios .grid {
         grid-template-columns: repeat(4, 1fr);
-
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .servicios .grid .img1 {
