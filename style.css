@@ -194,11 +194,11 @@ header nav ul li a:hover {
 }
 
 .conteinerMainOne .conteinerTwo .imgLavaRopa {
-    background-image: url(img/lavaropas1.jpg);
+    background-image: url(img/imgmain.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 66vh;
+    height: 72vh;
     width: 26rem;
 }
 
@@ -260,8 +260,9 @@ header nav ul li a:hover {
 }
 
 .servicios .grid .img2 {
-    background-image: url(img/img3grid.jpg);
+    background-image: url(img/lavaropas1.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     grid-column: 4/6;
     grid-row: 1/3;
