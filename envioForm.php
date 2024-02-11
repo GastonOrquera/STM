@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = $_POST['mensaje'];
 
     // Configura el correo electrónico
-    $destinatario = 'gastonorquera29@gmail.com'; // Reemplaza esto con tu dirección de correo electrónico
-    $asunto = 'Mensaje de contacto desde el sitio web';
+    $destinatario = "$email"; // Reemplaza esto con tu dirección de correo electrónico
+    $asunto = 'Servicio técnico';
 
     // Crea el cuerpo del mensaje
     $cuerpoMensaje = "Nombre: $nombre\n";
@@ -19,8 +19,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Redirige al usuario a una página de confirmación
     header('Location: confirmacion.html');
-} else {
-    // Si no es una solicitud POST, redirige a la página de contacto
-    header('Location: contacto.html');
-}
+} 
 ?>
