@@ -380,7 +380,6 @@ input[type="submit"]:hover {
 }
 
 .flex:first-of-type {
-
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
