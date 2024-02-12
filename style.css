@@ -394,7 +394,6 @@ input[type="submit"]:hover {
 .flex i {
     color: #202020;
     font-size: 1.6rem;
-    transform: rotate(-4deg);
 }
 
 .flex p {
