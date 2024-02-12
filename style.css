@@ -301,15 +301,13 @@ header nav ul li a:hover {
 /* FORM */
 
 .container {
-
     padding: 2rem 2rem;
     background-color: #151616;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
     width: 100%;
     flex-direction: column;
-
+    overflow: hidden;
 }
 
 .container h2 {
@@ -368,7 +366,29 @@ input[type="submit"]:hover {
 }
 
 
+.flex {
+    /* background-color: #7aff9e; */
+    background-color: #7aff9e;
+    position: relative;
+    bottom: 28.680rem;
+    left: 56%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    width: 44%;
+    border-radius: 4px;
+}
 
+.flex i {
+    color: #151616;
+    font-size: 1.6rem;
+}
+
+.flex p {
+    font-family: var(--fontTwo);
+    color: #151616;
+}
 
 
 
@@ -433,5 +453,14 @@ input[type="submit"]:hover {
     textarea,
     input[type="submit"] {
         width: 100%;
+    }
+
+    .flex {
+        margin-top: .2rem;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
