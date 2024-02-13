@@ -308,6 +308,7 @@ header nav ul li a:hover {
     width: 100%;
     flex-direction: column;
     overflow: hidden;
+    height: 114vh;
 }
 
 .container h2 {
@@ -456,6 +457,7 @@ input[type="submit"]:hover {
 
     .container {
         padding: 1rem 1rem;
+        height: max-content;
     }
 
     input[type="text"],
